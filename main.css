@@ -1,0 +1,259 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+button{
+  border: none;
+  cursor: pointer;
+}
+:root{
+  --txt-color : #fdfdfd;
+  --bg-color:rgba(0, 0, 0, 0.893);
+}
+body{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all 1s linear;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
+}
+.main-wrapper{
+  width: 1150px;
+  transition: all 1s ease 0s;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2.5rem;
+  background-color: var(--bg-color);
+  transition: all .6s ease;
+}
+.logo-box{
+display: flex;
+flex-direction: column;
+}
+.logo-info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.logo-img{
+  height: 50px;
+  border-radius: 5px;
+}
+.logo-info h2{
+  font-size:3rem;
+  font-weight: 800;
+  color:orange;
+}
+.logo-box p{
+  color: var(--txt-color);
+}
+.search-box{
+  display: flex;
+  gap:5px;
+  align-items: center;
+  margin-right: 60px;
+}
+.search-box input{
+  padding: 10px;
+  width: 350px;
+  color: black;
+  border-radius: 5px;
+}
+.search-box i{
+  background-color: orange;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 900;
+}
+/* links-section */
+.links-section{
+  display: flex;
+  gap: 20px;
+  padding:1.1rem;
+  background-color: rgba(0, 0, 0, 0.699);
+  flex-wrap: wrap;
+  align-items: center;
+  transition: all .6s ease;
+  justify-content: center;
+  border-top: 1px solid orange;
+}
+.link-tab{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-right: 1px solid #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 15px;
+}
+.link-tab a{
+ color: orange;
+ font-size: 12px;
+}
+.link-tab i {
+  color: orange;
+  font-size: 12px;
+}
+.fa-arrow-down{
+  position: relative;
+  right: 5px;
+}
+.fa-bars{
+  color: orange;
+  font-size: 20px;
+  display: none;
+}
+.menu-txt{
+  color: orange;
+  display:none;
+}
+/* extra-btns */
+.extra-btns{
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-block: 1rem;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.675);
+  justify-content: center;
+  transition: all .6s ease;
+}
+.extra-links-btn{
+  display: flex;
+  gap: 5px;
+  border: 2px solid #ffff;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+.extra-links-btn i{
+  color: blue;
+}
+
+/* media-cards-container */
+.media-cards-container{
+  display: flex;
+  gap:20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  transition: all .6s ease;
+  width: 100%;
+}
+
+/* cards-container */
+.cards-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 30px;
+  transition: all .6s ease;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  gap: 30px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.397);
+}
+.card img{
+  height: 300px;
+  width: 208px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card h4{
+  text-align: center;
+  margin:0px 10px 20px 10px;
+  color: #ffff;
+  font-size: 16px;
+}
+
+
+
+
+
+/* nxt-pages-btns */
+.nxt-pages-btns{
+display: flex;
+padding: 2rem;
+align-items: center;
+gap: 10px;
+margin-block:1.5rem;
+background-color:rgba(0, 0, 0, 0.803);
+transition: all .6s ease;
+}
+.nxtBtns{
+  padding:15px;
+  background-color: rgba(0, 0, 0, 0.364);
+  border-radius: 5px;
+  color: var(--txt-color);
+  font-size: 17px;
+  font-weight: 500;
+  width: 50px;
+  text-align: center;
+  border: 1px solid orange;
+}
+.nxtBtns:active{
+  background-color: orange;
+  color: var(--txt-color);
+}
+
+/* footer */
+footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--bg-color);
+  padding: 2rem;
+  gap: 10px;
+  transition: all .6s ease;
+}
+.footer-logo-info{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.footer-logo-info img{
+  height: 20px;
+}
+.footer-logo-info p{
+  color: var(--txt-color);
+}
+.footer-btns{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+.footer-btns a{
+  color: var(--txt-color);
+  font-size: 15px;
+}
+.footer-btns span{
+  color: orange;
+  font-size: 23px;
+}
+.year{
+  color: orange;
+}
